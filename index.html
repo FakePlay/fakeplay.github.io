@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header class="encabezado-encriptador">
+        <h1 class="titulo-principal">Encriptador de Textos</h1>
+    </header>
+
+    <main class="main">
+        <!-- Texto para encriptar -->
+        <section class="mensaje">
+            <h2 class="titulo-secundario">Texto a Encriptar</h2>
+            <textarea id="caja-texto" placeholder="Escriba el texto a encriptar o desencriptar..."></textarea>
+            <div class="aviso-botones">
+                <p class="clausula">Solo letras minúsculas y sin acentos.</p>
+                <div class="botones">
+                    <button id="botonEncriptar" class="btn btn-encriptar" onclick="encriptar();">Encriptar</button>
+                    <button id="botonDesencriptar" class="btn btn-desencriptar"
+                        onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Texto ya encriptado -->
+        <section class="mensaje resultado">
+            <h2 class="titulo-secundario">Texto Encriptado</h2>
+            <textarea id="texto-resultado" placeholder="Resultado..."></textarea>
+            <div class="aviso-botones">
+                <div class="botones caja-btncopy">
+                    <button id="botonCopiar" class="btn btn-copiar" onclick="copiar();">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de paágina -->
+    <footer class="footer">
+        <p class="right">&COPY; Derechos reservados - Marvin Echeverría</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
